@@ -1,14 +1,10 @@
-Lab Note
-========
+Lab Notes
+=========
 
-Laboratory notebook of lab 404, Department of Molecular biophysics, Bogomoletz Institute of Physiology.
-
-Property of I, A & B.
-
+Lab 404 laboratory notebook, Department of Molecular biophysics, Bogomoletz Institute of Physiology.
 
 ## Structure of lab notes
-In this notebook using Markdown markup for text notes and CSV sheets format for storing reagents compositions. I recommend that you store all updates in reagents and protocols folders in `master` branch and personal project records in separate branch (e.g. `researcher_name` branch). And separate branches require independent repositories in local machine. 
-
+In this notebook using Markdown markup for text notes and CSV sheets format for storing reagents compositions and chemicals/equipment lists.
 
 There are three main directories:
  1. Projects
@@ -18,7 +14,7 @@ There are three main directories:
 
 ## Projects
 Contain individual directories for each project.
-Each project folders must have unique tag and year in name and contain head file with detail description of project and individual folders for daily notes and results files.
+Each project folders must have unique tag and year in name and contain head file (**research_design.md**) with detail description of project and individual folders for daily notes and results files.
 
 ## Protocols
 Descriptions of standard protocols for laboratory manipulations. Presence of detailed protocol will simplify writing of future work notes (just insert reference to standard protocol).
@@ -41,8 +37,7 @@ Main **git** commands that you may needed for work are present below, enjoy. But
 
 
 - Clone `master` from GitHub repo: `git clone https://github.com/wisstock/Labnote.git`
-- Clone repo for personal use `git clone Labnote Labnote_researcher_name`
-- Create personal branch and switch to it: `git branch researcher_name`
+- Delete my notes
 - Create new `git remote` for you cloned repo:
 ```
 git remote add personal_remote https://github.com/user_name/Labnote.git
@@ -50,39 +45,10 @@ git remote add personal_remote https://github.com/user_name/Labnote.git
 
 &nbsp;
 
-- For editing reagents or protocols go to **Labnote** folder and switch to `master` branch: `git checkout master`
-- For saving changes in Reagents or Protocols folder in `master` branch follow next steps (**Warning: DO NOT use master branch or Labnote repo for personal records, for Reagents and/or Protocols only!**):
+- For editing notes go to **Labnote** folder and switch to `master` branch: `git checkout master`
+- For saving changes in Labnote folder follow next steps:
 ```
-git add --all
+git add . 
 git commit -m "commit message"
 git push origin master
-```
-
-- For sync your **Labnote** repo with upstream `master`:
-```
-git remote add upstream https://github.com/wisstock/Labnote.git
-git fetch upstream
-```
-
-&nbsp;
-
-- For editing projects records go to **Labnote_researcher_name** and switch to `researcher_name` branch:
-```
-git checkout researcher_name
-git remote set-url origin https://github.com/user_name/Labnote.git
-
-```
-
-- For pushing projects records to GitHub repo branch:
-`git push -u origin researcher_name`
-
-- For saving changes in projects records follow next steps:
-```
-git add --all
-git commit -m "commit message"
-git puch personal_remote researcher_name
-```
-- Sync you personal repo **Labnote_researcher_name** with update of Reagents and Protocols from `master` branch:
-```
-git merge master
 ```
