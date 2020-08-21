@@ -1,6 +1,6 @@
 Name,ID,Balance,Location
-Falcon 50 ml,CellStar 227 261,1,"114l, up"
-Falcon 15 ml,"CentriStar 430791, deltalab 31605317","1+20 (zip), 3 (individual)","114l, up"
+Falcon 50 ml,CellStar 227 261,-,-
+Falcon 15 ml,"CentriStar 430791, deltalab 31605317","20 (zip), 3 (individual)","114l, up"
 Tube 5 ml,12060911,7,"114l, up"
 Eppendorf 1.5 ml,DELTALAB 200400P,~100,"114l, up"
 Eppendorf 0.5 ml,DELTALAB 900118,~120,"114l, up"
@@ -14,4 +14,4 @@ Tips 1 ml,DELTALAB 200012.A,~40,"114l, down"
 Tips 5 ml,DELTALAB 200075.1,~50,"114l, down"
 Cover glass 18 mm,NA,~40x,"114l, up"
 ,,,
-Update 20.08.2020,,,
+Update 21.08.2020,,,
