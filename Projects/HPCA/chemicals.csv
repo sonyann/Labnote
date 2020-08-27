@@ -1,12 +1,13 @@
-Name,ID,Balance,Location,Note
-DMEM,gibco 11995-065,~0.2 l,"+4 (114l, bottle, r. left)",
-Trypsin-EDTA,Sigma T4049,"4x45 ml & 6x10 ml, 5x45 ml","-10 (114l), -20 (410a, TCR box)",
-FBS,Sigma S0615,6x5 ml & 2x40 ml,-10 (114l),
-Gentamicin 10 mg/ml,gibco 15710-049,~40 ml,+4 (114r),
-Lipofectamine 3000,invitrogen L3000-001,~0.5 ml L3000 & ~0.5 ml P3000,"+4 (114l, door)",
-DMSO,Sigma D-8779,9.75 ml,"+4 (114l, r. right)",
-AM NP-EGTA,Mol. Prob. N-6803,5x2 ul (5 mM in DMSO),"-10 (404, Ca2+ stuff aliquot box)","Diss. 23.07.2020 , freeze 27.07.2020"
-AM Fluo-4,Mol. Prob. F-14201,3x2 ul (5 mM in DMSO),"-10 (404, Ca2+ stuff aliquot box)","Diss. 23.07.2020 , freeze 27.07.2020"
-AM Fura Red,Invitrogen F3021,4x2 ul (5 mM in DMSO),"-10 (404, Ca2+ stuff aliquot box)","Diss. 27.07.2020 , freeze 27.07.2020"
-,,,,
-Update 20.08.2020,,,,
+Name,ID,Prepared,Tare,Balance,Location,Note
+DMEM-,Gibco 11995-065,20.08,"Falcon 50 ml, falcon 15 ml","3x45 ml, 10 ml","114l, r. left",intact after prep.
+DMEM+,-,20.08,Falcon 15 ml,10 ml,"114l, r. center",intact after prep.
+DMEM+,-,20.08,Falcon 15 ml,5.5 ml,"114l, r. center",I.W. 25.08
+CryoDMEM,-,16.07,Tube 5 ml,2 ml,"114l, -10",
+Trypsin-EDTA,Sigma T4049,u.f. 27.08,Falcon 15 ml,10 ml,"114l, r. right",
+FBS,Sigma S0615,-,-,-,-,
+Gentamicin,gibco 15710-049,22.06,Tube 2x5 ml,4.5 ml & ~80 ul,"114l, box",
+AM NP-EGTA,Mol. Prob. N-6803,u.f. 31.07,Epp. 0.5 ml,1.5 ul,"114l, Ca stuff box",5 mM in DMSO
+AM Fura Red,Invitrogen F3021,u.f. 31.07,Epp. 0.5 ml,1.85 ul,"114l, Ca stuff box",5 mM in DMSO
+AM Fluo-4,Mol. Prob. F-14201,u.f. 1.08,Epp. 0.5 ml,1.8 ul,"114l, Ca stuff box",5 mM in DMSO
+,,,,,,
+Update 27.08.2020,,,,,,
