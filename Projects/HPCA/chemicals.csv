@@ -1,5 +1,6 @@
 Name,ID,Prepared,Tare,Balance,Location,Note
-DMEM-,Gibco 11995-065,20.08,"Falcon 50 ml, falcon 15 ml","45 ml, 10 ml","114l, r. left",intact after prep.
+DMEM-,Gibco 11995-065,20.08,Falcon 50 ml,45 ml,"114l, r. left",intact after prep.
+DMEM-,Gibco 11995-065,20.08,Falcon 15 ml,10 ml,"114l, r. left",I.W. 3.09
 DMEM+,-,2.09,Falcon 15 ml,5x10 ml,-,intact after prep.
 DMEM+,-,20.08,Falcon 15 ml,4.5 ml,"114l, r. center",I.W. 25.08
 CryoDMEM,-,16.07,Tube 5 ml,2 ml,"114l, -10",
@@ -10,4 +11,4 @@ AM NP-EGTA,Mol. Prob. N-6803,u.f. 31.07,Epp. 0.5 ml,1.5 ul,"114l, Ca stuff box",
 AM Fura Red,Invitrogen F3021,u.f. 31.07,Epp. 0.5 ml,1.85 ul,"114l, Ca stuff box",5 mM in DMSO
 AM Fluo-4,Mol. Prob. F-14201,u.f. 1.08,Epp. 0.5 ml,1.8 ul,"114l, Ca stuff box",5 mM in DMSO
 ,,,,,,
-Update 2.09.2020,,,,,,
+Update 3.09.2020,,,,,,
