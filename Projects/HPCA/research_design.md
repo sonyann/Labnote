@@ -299,15 +299,6 @@ HPCA-mTFP1 + uncaging (new HEK)
 <img src="pic/tfp_fluo.png">
 
 
-
-
-
-
-
-
-
-
-
 **Intensity at diff WL TFP(Fluo-4)**
 
 |WL|Ex. %| Em. %|
