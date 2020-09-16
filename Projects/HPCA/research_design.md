@@ -321,7 +321,6 @@ HPCA-mTFP1 + uncaging (new HEK)
 #### Initial parameters 
 **Excitation and registration**
 Laser parameters:
-
 |Laser|Power|
 |-|-|
 |488 nm|10%|
