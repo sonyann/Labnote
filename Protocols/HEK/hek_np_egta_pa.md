@@ -1,6 +1,6 @@
 Ca2+ uncaging with NP-EGTA in HEK 293 wit pluronic acid
 =====================================
-*Borys Olifirov, 15.09.2020*
+*Borys Olifirov, 18.09.2020*
 
 
 **NP-EGTA AM** loading and Ca2+ uncaging in the HEK 293 cells culture.
@@ -49,7 +49,7 @@ Ca2+ uncaging with NP-EGTA in HEK 293 wit pluronic acid
 | **Reagent**              | Description                          | Note                                                       |
 | ------------------------ | ------------------------------------ | ---------------------------------------------------------- |
 | Outside Solution 2 mM Ca | standard outside solution            | solution composition in file outside_solution_2 mm _ca.csv |
-| Pluronic acid            | 20% solution in H2O free DMSO        |                                                            |
+| Pluronic acid            | 20% solution in H2O free DMSO        | preheat aliquot \~30' at 35-40oC in thermostat             |
 | NP-EGTA AM               | 5 mM stock solution in H2O free DMSO | take tube with aliquot from a fridge                       |
 
 1.3. Put equipment into the BSC
@@ -69,6 +69,7 @@ heat the solution to RT
 **Warning: preheat the tube 10-15 min at RT and vortex before use. DMSO melting temperature is 18.5oC**
 
 2.2. Add 1 ul pluronic acid solution
+**Warning: preheat the tube 20-30' at 35-40oC in thermostat**
 
 2.3. Add 500 ul Outside Solution and pippete around 20 times
 **Warning: add compounds dissolved in DMSO first otherwise they may not be dissolved properly in water**

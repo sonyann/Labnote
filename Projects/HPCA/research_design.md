@@ -13,6 +13,10 @@ Research design
 
 HEK 293 cells
 =============
+## Cell lines
+В работе используются две линии HEK 293, линия из института физиологии (**old HEK**) и полученная от Одина (**new HEK**, источник http://antibodyresearch.com/hek293-cell-line-human-embryonic-kidney/#product-reviews).
+
+
 ## Cultivation
 
 Оптимальные объемы реагентов для разной тары:
