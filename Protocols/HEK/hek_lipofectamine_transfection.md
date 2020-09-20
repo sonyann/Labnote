@@ -1,6 +1,6 @@
 Lipofectamine 3000 transfection of HEK 293 cells
 ================================================
-*Borys Olifirov, 21.07.2020*
+*Borys Olifirov, 20.09.2020*
 
 Protocol for **Lipofectamine 3000** transfection of the HEK 293 cells culture in 12-well culture plate with confluence 70-80%.
 *Note: reaction mix volume for ONE well of the 12-wells culture plate*
@@ -66,7 +66,7 @@ Transfection can be done differently depending of wanted result – separated tr
 *Note: add reaction mix to the medium drop by drop and after you should resuspend medium 5-10 times*
 
 2.8. Put all equipments in its place and clean the BSC work surface using 70% ethanol, don't forget turn off the BSC
-*Note: you should use cells during 1-3 days after transfection*
+*Note: you should use cells during 1-2 days after transfection*
 
 
 ### 2B. Separated transfection (for two plasmid)
