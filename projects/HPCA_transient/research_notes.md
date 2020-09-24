@@ -72,19 +72,6 @@ HEK 293 cells
 <img src="pic/cells0.jpg" width="40%">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Transfection
 
 Протокол трансфекции *hek_lipofectamine_transfection.md*. Массы из протокола Евгения Шеремета: 0.5 ug HPCA & 0.25 ug EYFP-Mem на лунку 12-wells plate. В полученных данных интенсивность HPCA неудовлетворительна, решено увеличить массу ДНК.
@@ -102,17 +89,6 @@ HEK 293 cells
 
 **Пример котрансфекции HPCA-TFP + EYFP-Mem**
 <img src="pic/hpca_yfp.png" width="40%">
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### Experiment pipeline
@@ -136,126 +112,6 @@ HEK 293 cells
 
 ## Calcium imaging
 Для регистрации динамики Ca2+ в клетки перед регистрацией в различный экспериментах загружали AM Fluo-4 (протокол *hek_fluo_4.md*) или AM Fura Red (протокол *hek_fura_ref.md*).
-
-
-
-
-HPCA-mTFP1 + uncaging (old HEK)
-======================
-*30.07.2020 - present time*
-
-Регистрации транслокаций HPCA в клетках трансфицированных HPCA-TFP. Положение мембраны на снимке оценивается по первому кадру после uncaging, когда транслокация максимальна. Для регистрации концентрации кальция применяли опробована Fura Red, попытка от 31.07.2020 неудачная. Ниже параметры для  Fluo-4. Есть опасения FRET.
-
-**Спектры возбуждения и эмиссии для mTFP1 и Fluo-4 + Ca2+**
-*Тонкие линии - возбуждение, жирные - эмиссия*
-<img src="pic/tfp_fluo.png">
-
-
-**Intensity at diff WL TFP(Fluo-4)**
-
-|WL|Ex. %| Em. %|
-|-|-|-|
-|458 nm|95 (28)|2 (0)|
-|500 nm|1 (83)|89 (41)|
-|540 nm|0 (49)|25 (50)|
-|560 nm|0 (20)|10 (29)|
-
-
-#### Initial parameters 
-**Excitation and registration**
-Laser parameters:
-
-|Laser|Power|
-|-|-|
-|458 nm|15%|
-
-Channels parameters:
-|Ch.|HV (V)|Pass band|Obj.|
-|-|-|-|-|
-|**CHS1**|700|475-500 nm|HPCA-mTFP1|
-|**CHS2**|700|540-600 nm|Fluo-4|
-
-**Optical system**
-C.A.: 250 um
-Exposure: 2 us/px
-Image size: 128x128 px
-Zoom: 6
-Size: 0.276 um/px
-
-Step size: 1.35 um
-Slices: 3
-Scaning speed: L 1.360 ms, F 0.188 s, S 1.157 s
-
-**Uncaging**
-Laser power (405 nm): 100%
-Region size: 128x128 px
-Slices: 1
-Cycles: 1
-
-Exposure: 10 us/px
-
-#### Time Controller protocol
-Серия из 80 z-stack с возбуждением 458 nm (полное время регистрации 92.6 s), экспозиция 405 nm происходит в одной фокальной плоскости сразу после 5 стека (в процессе сканирования 6-го).
-
-
-
-
-HPCA-mTFP1 + uncaging (new HEK)
-======================
-*30.07.2020 - present time*
-
-Регистрации транслокаций HPCA в клетках трансфицированных HPCA-TFP. Положение мембраны на снимке оценивается по первому кадру после uncaging, когда транслокация максимальна. Для регистрации концентрации кальция применяли опробована Fura Red, попытка от 31.07.2020 неудачная. Ниже параметры для  Fluo-4. Есть опасения FRET.
-
-**Спектры возбуждения и эмиссии для mTFP1 и Fluo-4 + Ca2+**
-*Тонкие линии - возбуждение, жирные - эмиссия*
-<img src="pic/tfp_fluo.png">
-
-
-**Intensity at diff WL TFP(Fluo-4)**
-
-|WL|Ex. %| Em. %|
-|-|-|-|
-|458 nm|95 (28)|2 (0)|
-|488 nm|32 (88)|69 (4)|
-|510 nm|0 (45)|67 (86)|
-
-
-
-#### Initial parameters 
-**Excitation and registration**
-Laser parameters:
-|Laser|Power|
-|-|-|
-|488 nm|10%|
-
-Channels parameters:
-|Ch.|HV (V)|Pass band|Obj.|
-|-|-|-|-|
-|**CHS1**|700|492-510 nm|HPCA-mTFP1|
-|**CHS2**|700|510-600 nm|Fluo-4|
-
-**Optical system**
-C.A.: 250 um
-Exposure: 2 us/px
-Image size: 128x128 px
-Zoom: 6
-Size: 0.276 um/px
-
-Step size: 1.35 um
-Slices: 3
-Scaning speed: L 1.360 ms, F 0.188 s, S 1.157 s
-
-**Uncaging**
-Laser power (405 nm): 100%
-Region size: 128x128 px
-Slices: 1
-Cycles: 1
-
-Exposure: 10 us/px
-
-#### Time Controller protocol
-Серия из 80 z-stack с возбуждением 458 nm (полное время регистрации 92.6 s), экспозиция 405 nm происходит в одной фокальной плоскости сразу после 5 стека (в процессе сканирования 6-го).
-
 
 
 Co-transfection + uncaging
