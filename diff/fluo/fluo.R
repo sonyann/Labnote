@@ -1,4 +1,4 @@
-# Flyorescent spectra snslysis
+# Flyorescent spectra anslysis
 # Copyright © 2020 Borys Olifirov
 
 require(ggplot2)
@@ -7,9 +7,9 @@ require(dplyr)
 require(magrittr)
 require(wavelength2colour)
 
-setwd('/home/astria/Bio/Note/Projects/HPCA/fluo')
+setwd('/home/astria/Bio/Note/diff/fluo')
 
-fluo.1 <- read.csv('Fluo-4.csv')
+fluo.1 <- read.csv('fluo_4.csv')
 fluo.2 <- read.csv('mTFP1.csv')
 pass.band.1 <- c(475, 500) 
 pass.band.2 <- c(540, 600)
@@ -37,13 +37,13 @@ fluo.2.em.col <- wavelength2hex(fluo.2$w[fluo.2$em == max(fluo.2$em)])
 
 
 ggplot() +
-#  geom_ribbon(data = fluo.1, mapping = aes(x = w,
-#                                        ymin = 0,
-#                                        ymax = ex),
-#              colour = fluo.1.ex.col,
-#              fill = fluo.1.ex.col,
-#              size = 0.2,
-#              alpha = 0.25) +
+  geom_ribbon(data = fluo.1, mapping = aes(x = w,
+                                        ymin = 0,
+                                        ymax = ex),
+              colour = fluo.1.ex.col,
+              fill = fluo.1.ex.col,
+              size = 0.2,
+              alpha = 0.25) +
   geom_ribbon(data = fluo.1, mapping = aes(x = w,
                                         ymin = 0,
                                         ymax = em),
@@ -51,13 +51,13 @@ ggplot() +
               fill = fluo.1.em.col,
               size = 1,
               alpha = 0.25) +
-#  geom_ribbon(data = fluo.2, mapping = aes(x = w,
-#                                      ymin = 0,
-#                                      ymax = ex),
-#              colour = fluo.2.ex.col,
-#              fill = fluo.2.ex.col,
-#              size = 0.2,
-#              alpha = 0.25) +
+  geom_ribbon(data = fluo.2, mapping = aes(x = w,
+                                      ymin = 0,
+                                      ymax = ex),
+              colour = fluo.2.ex.col,
+              fill = fluo.2.ex.col,
+              size = 0.2,
+              alpha = 0.25) +
   geom_ribbon(data = fluo.2, mapping = aes(x = w,
                                        ymin = 0,
                                        ymax = em),
