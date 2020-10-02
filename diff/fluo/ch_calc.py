@@ -138,13 +138,20 @@ def wavelen2rgb(Wavelength, MaxIntensity=100):
     return [R, G, B]
 
 
+class fluorophore:
+    def __init__(self, fluo_name, fluo_df, laser_list, ch_list):
+        self.fluo_name = fluo_name
+        self.ex_spec = np.array(fluo_df.ex)
+        self.em_spec = np.array(fluo_df.em)
+
+
 FORMAT = "%(asctime)s| %(levelname)s [%(filename)s: - %(funcName)20s]  %(message)s"
 logging.basicConfig(level=logging.INFO,
                     format=FORMAT)
 
 plt.style.use('dark_background')
 plt.rcParams['figure.facecolor'] = '#272b30'
-plt.rcParams['image.cmap'] = 'inferno'
+
 
 fluo_list = ['mTFP1', 'fluo_4']
 ex_list = [456, 488]
@@ -155,7 +162,7 @@ ch_dict = {'ch_1':[492, 510],
 spectra_dict = {}
 for root, dirs, files in os.walk(os.getcwd()):
     for file in files:
-        if file.endswith('.csv'):
+        if file.endswith('.csv') and file.split('.')[0] in fluo_list:
             file_path = os.path.join(root, file)
 
             raw_csv = pd.read_csv(file_path)
@@ -167,6 +174,22 @@ for root, dirs, files in os.walk(os.getcwd()):
 
             spectra_dict.update({file.split('.')[0]: raw_csv})
             logging.info('{} spectra uploaded'.format(file.split('.')[0]))
+
+
+# ex lvl
+ch_talk = {}
+for fluo in fluo_list:
+    fluo_spectra = spectra_dict[fluo]
+    for laser in ex_list:
+        ex_lvl = int(fluo_spectra.loc[fluo_spectra['w'] == laser, 'ex'])
+        logging.info('{}|{} nm = {}'.format(fluo, laser, ex_lvl))
+    for ch in ch_dict:
+        ch_bandpass = ch_dict[ch]
+        print(fluo_spectra.index[fluo_spectra['w'] >= ch_bandpass[0] and fluo_spectra['w'] <= ch_bandpass[1]].tolist())
+
+
+
+# crosstalk
 
 
 # build plots
