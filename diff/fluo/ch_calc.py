@@ -183,9 +183,9 @@ for fluo in fluo_list:
     for laser in ex_list:
         ex_lvl = int(fluo_spectra.loc[fluo_spectra['w'] == laser, 'ex'])
         logging.info('{}|{} nm = {}'.format(fluo, laser, ex_lvl))
-    for ch in ch_dict:
-        ch_bandpass = ch_dict[ch]
-        print(fluo_spectra.index[fluo_spectra['w'] >= ch_bandpass[0] and fluo_spectra['w'] <= ch_bandpass[1]].tolist())
+#     for ch in ch_dict:
+#         ch_bandpass = ch_dict[ch]
+#         print(fluo_spectra.index[fluo_spectra['w'] >= ch_bandpass[0] and fluo_spectra['w'] <= ch_bandpass[1]].tolist())
 
 
 
