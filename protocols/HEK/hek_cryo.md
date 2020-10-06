@@ -53,3 +53,7 @@ Protocol for cryoconservation of the HEK 293 cells culture.
 2.2. Remove all old medium from a flask
 
 2.3. Add 1 ml of Trypsin-EDTA to a flask and wash cells 
+
+2.4. Add 3 ml of Trypsin-EDTA to a flask
+
+2.5. 3 min in CO2 incubator
